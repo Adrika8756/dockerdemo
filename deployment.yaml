@@ -17,7 +17,7 @@ spec:
   spec:
    containers:
    - name: myappgcr
-     image: gcr.io/devops-san-273920/devops:tagversion
+     image: gcr.io/level-dragon-276910/devops:tagversion
      ports:
      - containerPort: 8080
 
