@@ -2,7 +2,7 @@ pipeline {
     agent any 	
 	environment {
 		
-		PROJECT_ID = 'devops-san-273920'
+		PROJECT_ID = 'level-dragon-276910'
                 CLUSTER_NAME = 'k8s-cluster'
                 LOCATION = 'europe-west2-c'
                 CREDENTIALS_ID = 'K8'
