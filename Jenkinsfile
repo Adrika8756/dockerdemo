@@ -37,7 +37,7 @@ pipeline {
 	   stage("Push Docker Image") {
                 steps {
                    script {
-                      docker.withRegistry('https://gcr.io', 'sakibmalikshaikh1985') {
+                      docker.withRegistry('https://registry.hub.docker.com', 'Docker') {
                             myimage.push("${env.BUILD_ID}")		
                      }
 			   
