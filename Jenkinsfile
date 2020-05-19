@@ -30,7 +30,7 @@ pipeline {
 	   stage('Build Docker Image') { 
 		steps {
                    script {
-		      myimage = docker.build("gcr.io/level-dragon-276910/devops:${env.BUILD_ID}")
+		      myimage = docker.build("gcr.io/level-dragon-276910/sakibmalikshaikh1985/devops:${env.BUILD_ID}")
                    }
                 }
 	   }
