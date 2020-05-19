@@ -5,7 +5,7 @@ pipeline {
 		PROJECT_ID = 'level-dragon-276910'
                 CLUSTER_NAME = 'k8s-cluster'
                 LOCATION = 'europe-west2-c'
-                CREDENTIALS_ID = 'K8'
+                CREDENTIALS_ID = 'level-dragon-276910'
 	}
 	
     stages {	
@@ -37,7 +37,7 @@ pipeline {
 	   stage("Push Docker Image") {
                 steps {
                    script {
-                      docker.withRegistry('https://registry.hub.docker.com') {
+                      docker.withRegistry('https://gcr.io') {
                             myimage.push("${env.BUILD_ID}")		
                      }
 			   
